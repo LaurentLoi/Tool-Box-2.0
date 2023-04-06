@@ -8,7 +8,7 @@ export class NavBarComponent {
     public navLinks: INavLink[] = [
         {
             title: 'Home',
-            link: '/demo/welcome',
+            link: '/demo/home',
             icon: 'i-home'
         },
         {
