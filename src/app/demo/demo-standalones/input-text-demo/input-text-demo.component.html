@@ -1,0 +1,10 @@
+<div [formGroup]="group">
+    <app-input-text formControlName="control"></app-input-text>
+</div>
+<div>
+    <div>{{ control.value }}</div>
+    <div *ngIf="control.errors">
+        Control errors:
+        <div class="ms-2">{{ control.errors | json }}</div>
+    </div>
+</div>
