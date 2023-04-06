@@ -4,6 +4,7 @@
             <app-input-text formControlName="control"></app-input-text>
         </div>
         <div class="col-4">
+            Value:
             <div>{{ control.value }}</div>
             <div *ngIf="control.invalid">
                 Control errors:
@@ -13,5 +14,4 @@
             </div>
         </div>
     </div>
-
 </div>
