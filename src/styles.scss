@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$primary: #38383b;
+$secondary: #02547d;
+
+
+app-home {
+    .aside {
+        height: 100vh;
+        background-color: $primary;
+    }
+}
+
+nav > div{
+    background-color: $primary;
+}

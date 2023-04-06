@@ -1,0 +1,10 @@
+<nav class="">
+    <div class="row py-2">
+        <div class="nav-link col-2" *ngFor="let navLink of navLinks">
+            <a class="link icon" href="{{ navLink.link }}" [ngClass]="navLink.icon">
+                {{ navLink.title }}
+            </a>
+        </div>
+    </div>
+</nav>
+
