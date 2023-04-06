@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tool-box-2.0",
+            "outputPath": "dist/tool-box-2_0",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "tool-box-2.0:build:production"
+              "browserTarget": "tool-box-2_0:build:production"
             },
             "development": {
-              "browserTarget": "tool-box-2.0:build:development"
+              "browserTarget": "tool-box-2_0:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tool-box-2.0:build"
+            "browserTarget": "tool-box-2_0:build"
           }
         },
         "test": {
