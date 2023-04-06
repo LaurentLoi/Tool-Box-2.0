@@ -1,10 +1,17 @@
-<div [formGroup]="group">
-    <app-input-text formControlName="control"></app-input-text>
-</div>
-<div>
-    <div>{{ control.value }}</div>
-    <div *ngIf="control.errors">
-        Control errors:
-        <div class="ms-2">{{ control.errors | json }}</div>
+<div class="container-fluid">
+    <div [formGroup]="group" class="row mt-4">
+        <div class="col-4">
+            <app-input-text formControlName="control"></app-input-text>
+        </div>
+        <div class="col-4">
+            <div>{{ control.value }}</div>
+            <div *ngIf="control.invalid">
+                Control errors:
+                <div *ngFor="let error of controlErrors" class="ms-2">
+                    {{ error.error }} - {{ error.value | json }}
+                </div>
+            </div>
+        </div>
     </div>
+
 </div>
