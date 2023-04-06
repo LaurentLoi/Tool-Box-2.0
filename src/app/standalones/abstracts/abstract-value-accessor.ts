@@ -4,6 +4,7 @@ export abstract class AbstractValueAccessor implements ControlValueAccessor, Val
     abstract control: FormControl;
 
     onTouched = () => {};
+    onValidationChange: any = () => {};
 
     registerOnTouched(onTouched: any): void {
         this.onTouched = onTouched;
@@ -14,7 +15,7 @@ export abstract class AbstractValueAccessor implements ControlValueAccessor, Val
     }
 
     validate(control: AbstractControl): ValidationErrors | null {
-        return control.errors;
+        return control.invalid ? control.errors : null;
     }
 
     setDisabledState(disabled: boolean): void {
@@ -32,5 +33,7 @@ export abstract class AbstractValueAccessor implements ControlValueAccessor, Val
         }
     }
 
-    // todo add validators
+    registerOnValidatorChange(fn: () => void): void {
+        this.onValidationChange = fn;
+    }
 }
