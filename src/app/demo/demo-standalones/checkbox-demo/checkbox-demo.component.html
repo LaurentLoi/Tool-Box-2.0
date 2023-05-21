@@ -1,11 +1,16 @@
 <div class="container-fluid" [formGroup]="group">
     <div class="row mt-4">
         <div class="col-4">
-            <app-input-text formControlName="control"></app-input-text>
+            <app-generic-checkbox
+                    formControlName="control"
+                    [data]="data"
+                    [labelRef]="'label'"
+                    [valueRef]="'value'"
+            ></app-generic-checkbox>
         </div>
         <div class="col-4">
-            Value:
-            <div>{{ control.value }}</div>
+            Value 2 :
+            <div>{{ control.value | json }}</div>
             <div *ngIf="control.invalid">
                 Control errors:
                 <div *ngFor="let error of controlErrors" class="ms-2">

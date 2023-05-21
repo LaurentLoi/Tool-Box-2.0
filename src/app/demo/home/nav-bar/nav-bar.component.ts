@@ -9,13 +9,18 @@ export class NavBarComponent {
         {
             title: 'Home',
             link: '/demo/home',
-            icon: 'i-home'
+            icon: 'i-home',
         },
         {
             title: 'Input-text',
             link: '/demo/input-text',
-            icon: 'i-newspaper'
-        }
+            icon: 'i-newspaper',
+        },
+        {
+            title: 'Checkbox',
+            link: '/demo/checkbox',
+            icon: 'i-newspaper',
+        },
     ]
 }
 

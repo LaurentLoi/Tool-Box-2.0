@@ -8,6 +8,8 @@ import { WelcomeComponent } from './home/welcome/welcome.component';
 import { RouterModule } from '@angular/router';
 import { NavBarComponent } from './home/nav-bar/nav-bar.component';
 import { DemoComponent } from './demo.component';
+import { GenericCheckboxComponent } from '../standalones/input-checkbox/generic-checkbox/generic-checkbox.component';
+import { CheckboxDemoComponent } from './demo-standalones/checkbox-demo/checkbox-demo.component';
 
 
 
@@ -17,6 +19,7 @@ import { DemoComponent } from './demo.component';
         NavBarComponent,
         WelcomeComponent,
         InputTextDemoComponent,
+        CheckboxDemoComponent,
     ],
     imports: [
         RouterModule,
@@ -24,6 +27,7 @@ import { DemoComponent } from './demo.component';
         CommonModule,
         ReactiveFormsModule,
         InputTextComponent,
+        GenericCheckboxComponent,
     ]
 })
 export class DemoModule { }

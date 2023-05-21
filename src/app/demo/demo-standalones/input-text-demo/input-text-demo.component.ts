@@ -16,8 +16,14 @@ export class InputTextDemoComponent {
                 Validators.minLength(5),
                 Validators.email
             ]
-        })
+        }),
     });
+
+    data = [
+        {value: 'a', label: 'a'},
+        {value: 'b', label: 'b'},
+        {value: 'c', label: 'c'},
+    ]
 
     constructor(private fb: FormBuilder) {}
 
@@ -39,4 +45,5 @@ export class InputTextDemoComponent {
         }
         return errors;
     }
+
 }

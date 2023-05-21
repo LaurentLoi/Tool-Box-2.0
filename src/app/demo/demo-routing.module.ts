@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent } from './home/welcome/welcome.component';
 import { InputTextDemoComponent } from './demo-standalones/input-text-demo/input-text-demo.component';
 import { DemoComponent } from './demo.component';
+import { CheckboxDemoComponent } from './demo-standalones/checkbox-demo/checkbox-demo.component';
 
 const routes: Routes = [
     {
@@ -16,6 +17,10 @@ const routes: Routes = [
             {
                 path: 'input-text',
                 component: InputTextDemoComponent
+            },
+            {
+                path: 'checkbox',
+                component: CheckboxDemoComponent
             },
         ]
     },
