@@ -29,7 +29,7 @@ export abstract class AbstractValueAccessor implements ControlValueAccessor, Val
 
     writeValue(value: any): void {
         if (value) {
-            this.control.setValue(value, {emitEvent: false});
+            this.control.setValue(value);
         }
     }
 

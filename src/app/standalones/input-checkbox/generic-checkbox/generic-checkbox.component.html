@@ -1,0 +1,8 @@
+<app-checkbox-group
+        [formControl]="control"
+        [multipleSelection]="multipleSelection"
+        >
+    <ng-container *ngFor="let item of data">
+        <app-checkbox [value]="item[valueRef]" [label]="getLabel(item)"></app-checkbox>
+    </ng-container>
+</app-checkbox-group>
