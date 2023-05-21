@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-pages": "ng build --base-href https://laurentloi.github.io/Tool-Box-2.0/",
+    "build-pages": "ng build --base-href /Tool-Box-2.0/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

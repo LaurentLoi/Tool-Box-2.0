@@ -11,6 +11,7 @@ export abstract class AbstractValueAccessor implements ControlValueAccessor, Val
     }
 
     registerOnChange(onChange: any): void {
+        // todo close subscription
         this.control.valueChanges.subscribe(onChange);
     }
 
